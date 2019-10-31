@@ -1,0 +1,60 @@
+.heading {
+  font-family: $font-display;
+	font-weight: 400; 
+
+	&--2 {
+		@extend .heading;
+		line-height: 1;
+		font-style: italic;
+		font-size: 4rem;
+	}
+
+	&--3 {
+		@extend .heading;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		color: $color-primary;
+	}
+
+	&--4 {
+		@extend .heading;
+		font-size: 1.9rem;
+	}
+
+	&--light {
+		@extend .heading;
+		color: $color-grey-light-1;
+	}
+
+	&--dark {
+		@extend .heading;
+		color: $color-grey-dark-1;
+	}
+}
+
+.mb {
+	&-sm { margin-bottom: 2rem; }
+
+	&-md { margin-bottom: 3rem; }
+
+	&-lg { margin-bottom: 4rem; }
+
+	&-xl { margin-bottom: 8rem; }
+}
+
+.btn {
+	background-color: $color-primary;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	font-family: $font-display;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 1.8rem 3rem;
+	cursor: pointer;
+	transition: all .2s;
+
+	&:hover {
+		background-color: $color-primary-dark;
+	}
+}
